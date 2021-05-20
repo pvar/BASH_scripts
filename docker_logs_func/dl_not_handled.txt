@@ -1,0 +1,19 @@
+
+alias dc_bulletin_log							='dc_go;docker-compose exec bulletin bash -c '\''cd /var/log/sportsbook && tail -f *bulletin*'\'';cd -'
+
+alias dc_stlengine_child-auto_log				='dc_go;docker-compose exec stlengine-app bash -c '\''cd /opt/openbet/logs && tail -f *child-auto*'\'';cd -'
+alias dc_stlengine_child-basic_log				='dc_go;docker-compose exec stlengine-app bash -c '\''cd /opt/openbet/logs && tail -f *child-basic*'\'';cd -'
+alias dc_stlengine_child-flk_log				='dc_go;docker-compose exec stlengine-app bash -c '\''cd /opt/openbet/logs && tail -f *child-flk*'\'';cd -'
+alias dc_stlengine_child-req_log				='dc_go;docker-compose exec stlengine-app bash -c '\''cd /opt/openbet/logs && tail -f *child-req*'\'';cd -'
+alias dc_stlengine_child-retrochange_log		='dc_go;docker-compose exec stlengine-app bash -c '\''cd /opt/openbet/logs && tail -f *child-retrochange*'\'';cd -'
+alias dc_stlengine_child-stllose_log			='dc_go;docker-compose exec stlengine-app bash -c '\''cd /opt/openbet/logs && tail -f *child-stllose*'\'';cd -'
+alias dc_stlengine_child-stlwin_log				='dc_go;docker-compose exec stlengine-app bash -c '\''cd /opt/openbet/logs && tail -f *child-stlwin*'\'';cd -'
+alias dc_stlengine_child-unstl_log				='dc_go;docker-compose exec stlengine-app bash -c '\''cd /opt/openbet/logs && tail -f *child-unstl*'\'';cd -'
+
+alias dc_xsys_sync_queue_child-cashout_log		='dc_go;docker-compose exec xsys_sync_queue bash -c '\''cd /opt/openbet/logs && tail -f *child-cashout*'\'';cd -'
+alias dc_xsys_sync_queue_child-reconcile_l_log	='dc_go;docker-compose exec xsys_sync_queue bash -c '\''cd /opt/openbet/logs && tail -f *child-reconcile_l*'\'';cd -'
+alias dc_xsys_sync_queue_child-reconcile_log	='dc_go;docker-compose exec xsys_sync_queue bash -c '\''cd /opt/openbet/logs && tail -f *child-reconcile*'\'';cd -'
+alias dc_xsys_sync_queue_child-reconcile_v_log	='dc_go;docker-compose exec xsys_sync_queue bash -c '\''cd /opt/openbet/logs && tail -f *child-reconcile_v*'\'';cd -'
+alias dc_xsys_sync_queue_child-reporter_log		='dc_go;docker-compose exec xsys_sync_queue bash -c '\''cd /opt/openbet/logs && tail -f *child-reporter*'\'';cd -'
+alias dc_xsys_sync_queue_child-settlement_log	='dc_go;docker-compose exec xsys_sync_queue bash -c '\''cd /opt/openbet/logs && tail -f *child-settlement*'\'';cd -'
+alias dc_xsys_sync_queue_child-unsettlement_log	='dc_go;docker-compose exec xsys_sync_queue bash -c '\''cd /opt/openbet/logs && tail -f *child-unsettlement*'\'';cd -'
