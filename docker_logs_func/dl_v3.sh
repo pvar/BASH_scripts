@@ -20,7 +20,7 @@ dl () {
 
 	# execute command in separate process
 	# NOTE: When CTRL-C is pressed, the child-process exits
-    # and the user regains control of his/her shell, in which
+	# and the user regains control of his/her shell, in which
 	# the current directory never changed :)
 	eval "( $cmd )"
 }
